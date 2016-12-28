@@ -29,24 +29,12 @@ signUp_btn.addEventListener('click', function() {
     if (signUp_userEmail.value != '' && signUp_userName != '' && signUp_userPass.value != '') {
         signUp_container.className = 'hidden';
         logIn_container.className = 'show';
-        console.log('hello world');
     }
     else {
         alert("please fill out input fields");
     }
 }, false)
 
-// signUp_btn.addEventListener('click', function () {
-//     if (signUp_userEmail.value != '' && signUp_userName != '' && signUp_userPass.value != '') {
-//         signUp_container.className = 'hidden';
-//         logIn_container.className = 'show';
-//         console.log('hello world');
-//     }
-//     else {
-//         alert("please fill out input fields");
-//     }
-// }
-// )
 
 //when user click on login button get email and pass from session storage and match with the email and pass provided by user in login
 //form if email and pass matched hide the login form and show him congrats
@@ -60,7 +48,4 @@ logIn_btn.addEventListener('click', function () {
     else {
         alert('Your email or password looks like wrong');
     }
-})
-logIn_btn.addEventListener('click', function () {
-
-})
+}, false)

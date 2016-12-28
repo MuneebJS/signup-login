@@ -1,6 +1,9 @@
-/*.show {*/
-    /*display: block!important;*/
-/*}*/
-/*#log-in {*/
-    /*display: none;*/
-/*}*/
+.show {
+    display: block!important;
+}
+.hidden {
+    display: none;
+}
+#log-in {
+    display: none;
+}
