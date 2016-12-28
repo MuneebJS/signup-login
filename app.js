@@ -1,4 +1,3 @@
-//list of all variables which will use in this programme
 var signUp_userEmail = document.getElementById('user-email-signup');
 var signUp_userName = document.getElementById('user-name-signup');
 var signUp_userPass = document.getElementById('user-pass-signup');
@@ -22,10 +21,11 @@ signUp_btn.addEventListener('click', function () {
     sessionStorage.userEmail = userInfo.email;
     sessionStorage.userName = userInfo.name;
     sessionStorage.userPassword = userInfo.password;
+    // console.log(sessionStorage.getItem("userEmail"));
 }, false)
 
 //when user click on sign up button hide the sign up form and show login form 
-signUp_btn.addEventListener('click', function() {
+signUp_btn.addEventListener('click', function () {
     if (signUp_userEmail.value != '' && signUp_userName != '' && signUp_userPass.value != '') {
         signUp_container.className = 'hidden';
         logIn_container.className = 'show';
@@ -36,16 +36,17 @@ signUp_btn.addEventListener('click', function() {
 }, false)
 
 
-//when user click on login button get email and pass from session storage and match with the email and pass provided by user in login
-//form if email and pass matched hide the login form and show him congrats
+// when user click on login button get email and pass from session storage and match with the email and pass provided by user in login
+// form if email and pass matched hide the login form and show him congrats
 logIn_btn.addEventListener('click', function () {
-    var userEmail = sessionStorage.getItem('userEmail');
-    var userPassword = sessionStorage.getItem('userPass');
-    if (logIn_userEmail.value == userEmail && logIn_userPass == userPassword) {
+    var email = sessionStorage.getItem('userEmail');
+    var pass = sessionStorage.getItem('userPassword');
+    if (logIn_userEmail.value == email && logIn_userPass.value == pass) {
         logIn_container.className = 'hidden';
         congrats_container.className = 'show';
     }
     else {
-        alert('Your email or password looks like wrong');
+        alert('It looks like your pass or email is wrong');
     }
-}, false)
+    console.log(logIn_userEmail.value + " " + email + ' ' + logIn_userPass.value + " " + pass);
+})

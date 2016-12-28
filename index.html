@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 
 <body>
@@ -15,17 +15,17 @@
             <h1>Sign Up</h1>
             <div class="form-group">
                 <label for="email" class="control-lable">Email</label>
-                <input type="email" id="user-email-signup" class="form-control">
+                <input type="email" id="user-email-signup" class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="name" class="control-lable">Name</label>
-                <input type="text" name="name" id="user-name-signup" class="form-control">
+                <input type="text" name="name" id="user-name-signup" class="form-control" required>
             </div>
             <div class="form-group">
                 <label for="password" class="control-lable">Password</label>
-                <input type="password" name="password" id="user-pass-signup" class="form-control">
+                <input type="password" name="password" id="user-pass-signup" class="form-control" required>
             </div>
-            <input type="button" class="btn btn-default" id="btn-signup" value="Sign Up" onclick="click()">
+            <input type="button" class="btn btn-default" id="btn-signup" value="Sign Up">
 <!--</form>-->
 </div>
 <div id="log-in" class="hidden">
@@ -33,11 +33,11 @@
         <h1>Login</h1>
         <div class="form-group">
             <label for="email" class="control-lable">Email</label>
-            <input type="email" name="email" id="user-email-login" class="form-control">
+            <input type="email" name="email" id="user-email-login" class="form-control" required>
         </div>
         <div class="form-group">
             <label for="password" class="control-lable">Password</label>
-            <input type="password" id="user-pass-login" class="form-control">
+            <input type="password" id="user-pass-login" class="form-control" required>
         </div>
         <div>
             <input type="button" value="Login" id="btn-login" class="btn btn-default">
@@ -45,7 +45,7 @@
     </div>
 </div>
 <div id="congrats" class="hidden">
-    congrats
+    <h1>congrats</h1>
 </div>
 </div>
 <script src="app.js"></script>
