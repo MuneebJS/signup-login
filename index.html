@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+</head>
+
+<body>
+    <div class="container">
+        <div id="sign-up">
+            <!--<form id="form-signup" class="form-horizontal">-->
+            <h1>Sign Up</h1>
+            <div class="form-group">
+                <label for="email" class="control-lable">Email</label>
+                <input type="email" id="user-email-signup" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="name" class="control-lable">Name</label>
+                <input type="text" name="name" id="user-name-signup" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="password" class="control-lable">Password</label>
+                <input type="password" name="password" id="user-pass-signup" class="form-control">
+            </div>
+            <input type="button" class="btn btn-default" id="btn-signup" value="Sign Up" onclick="click()">
+            <input type="button" value="hello" onclick="click()">
+<!--</form>-->
+</div>
+<div id="log-in" class="hidden">
+    <div id="form-login" class="form-horizontal">
+        <h1>Login</h1>
+        <div class="form-group">
+            <label for="email" class="control-lable">Email</label>
+            <input type="email" name="email" id="user-email-login" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="password" class="control-lable">Password</label>
+            <input type="password" id="user-pass-login" class="form-control">
+        </div>
+        <div>
+            <input type="button" value="Login" id="btn-login" class="btn btn-default">
+        </div>
+    </div>
+</div>
+<div id="congrats" class="hidden">
+    congrats
+</div>
+</div>
+<input type="button" value="hell" onclick="click()">
+
+<script src="app.js"></script>
+</body>
+</html>
